@@ -1,0 +1,115 @@
+h1{
+font-size: 30px;
+color: rgb(7, 7, 90);
+}
+
+h2 {
+margin: 32px 0 12px;
+font-size: 20px;
+text-align: left;
+color: rgb(35, 33, 131);
+width: 100%;
+max-width: 380px;
+}
+
+.form {
+width: 100%;
+max-width: 380px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.form input[type="text"] {
+width: 100%;
+padding: 10px 12px;
+border-radius: 6px;
+color: #111;
+}
+
+/* Botón principal */
+#add-link {
+margin-top: 6px;
+padding: 12px;
+border: none;
+border-radius: 6px;
+color: #ffffff;
+background-color: rgb(28, 15, 126);
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif,bold
+font-weight: 600;
+font-size: 15px;
+cursor: pointer;
+}
+
+#add-link:hover {
+filter: brightness(1.1);
+}
+
+#listado {
+  display: none;
+}
+
+
+#links-container {
+width: 100%;
+max-width: 350px;
+display: flex;
+flex-wrap: wrap;
+gap: 12px;
+}
+
+.link-item {
+position: relative;
+padding: 12px 18px;
+border-radius: 8px;
+display: inline-flex;
+align-items: center;
+}
+
+/* Texto del link */
+.link-item a {
+color: #ffffff;
+text-decoration: none;
+font-size: 15px;
+}
+
+/* Botón de eliminar con X */
+.link-item button {
+position: absolute;
+top: -8px;
+right: -8px;
+width: 20px;
+height: 20px;
+padding: 0;
+border-radius: 50%;
+border: none;
+color: #ffffff;
+font-size: 12px;
+cursor: pointer;
+}
+
+.pill {
+  position: relative;
+  padding-right: 26px;
+}
+
+.close-btn {
+all: unset; 
+
+color: white;
+font-size: 16px;
+font-weight: bold;
+
+cursor: pointer;
+
+width: 20px;
+height: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+position: absolute;
+top: -6px;
+right: -6px;
+}
+

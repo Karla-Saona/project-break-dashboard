@@ -1,0 +1,68 @@
+
+body {
+  margin: 0;
+  min-height: 100px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: rgb(231, 223, 223);
+  background-color: #000;        
+}
+
+.dashboard {
+  display: grid;
+  column-gap: 40px;
+  row-gap: 30px;
+  padding: 40px;
+  align-items: start;
+}
+
+/* link */
+.column-left {
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;      
+}
+
+/* Reloj  */
+.column-right {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  text-align: right;
+}
+
+/* Weather */
+.weatherStation {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+/* Password */
+.generatorPassword {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+@media (max-width: 900px) {
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;       
+  justify-content: center; 
+
+  gap: 30px;
+  width: 100%;
+  }
+
+  .column-right,
+  .weatherStation,
+  .generatorPassword,
+  .column-left {
+  width: 100%;
+  max-width: 380px;   
+  text-align: center; 
+  }
+
+  /* Orden de los elementos */
+  .column-right { order: 1; }
+  .weatherStation { order: 2; }
+  .generatorPassword { order: 3; }
+  .column-left { order: 4; }
+}
