@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather</title>
+
+<link rel="stylesheet" href="CSS/global.css">
+<link rel="stylesheet" href="CSS/weather.css">
+</head>
+<body>
+<section class="weatherStation">
+    <div id="weather">
+        <h2 id="city"></h2>
+        <p id="condition"></p>
+
+        <div class="weather-row">
+        <div class="left-block">
+        <img id="icon">
+        <p id="temp"></p>
+        </div>
+
+            <div class="right-block">
+            <p id="precip"></p>
+            <p id="humid"></p>
+            <p id="wind"></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="container"></div>
+</section>
+
+<script src="js/img.js"></script>
+<script src="js/weather.js"></script>
+</body>
+</html>
